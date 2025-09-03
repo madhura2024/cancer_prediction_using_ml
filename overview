@@ -1,0 +1,56 @@
+Cancer Prediction Project Workflow (Cheat Sheet)  
+1. Get the data  
+
+Load the dataset directly from the internet.  
+
+Remove extra spaces from text columns.  
+
+Drop useless columns like IDs.  
+
+Remove rows with missing data and duplicates.  
+
+2. Prepare features and labels  
+
+Features include all columns except for the target.  
+
+Labels refer to the target column (“Class” or “Diagnosis”).  
+
+3. Split the data  
+
+Divide the data into a training set (70%) and a test set (30%).  
+
+4. Scale the features  
+
+Use scaling to normalize feature values. This puts them all on a similar scale.  
+
+5. Train machine learning models  
+
+Train Logistic Regression, Random Forest, and SVM using the training data.  
+
+Use enough iterations for Logistic Regression to reach convergence.  
+
+6. Evaluate models  
+
+Predict labels using the test data.  
+
+Calculate the accuracy score for each model.  
+
+7. Train deep learning model (optional)  
+
+Build a small neural network.  
+
+Train it on the scaled training data.  
+
+Validate during training.  
+
+Evaluate using the test data.  
+
+8. Make predictions on new user input  
+
+Ask the user to input all feature values at once.  
+
+Scale these inputs the same way as the training data.  
+
+Use each trained model to predict if a case is benign or malignant.  
+
+Show prediction results as simple text.  
